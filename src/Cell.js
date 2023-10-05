@@ -1,7 +1,7 @@
 
-function Cell({setGridCell,symbol}) {
+function Cell({setGridCell,symbol,active}) {
   return(
-      <div className={`cell`} onClick={()=>setGridCell()}>
+      <div className={`cell ${active ? 'active':''}`} onClick={()=>setGridCell()}>
           {symbol}
       </div>
   );

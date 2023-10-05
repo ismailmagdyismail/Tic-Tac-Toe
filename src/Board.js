@@ -50,6 +50,7 @@ function Board() {
                         key={i+j}
                         setGridCell={()=>setCell(i,j)}
                         symbol={board[i][j].img}
+                        active={board[i][j].symbol !== '-'}
                     />
                 ))}
             </div>
