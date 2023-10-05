@@ -1,0 +1,73 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  /*background-color: rgb(1, 26, 26);*/
+  background-color: #0F1B21;
+}
+#root {
+  display: flex;
+  place-items: center;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+.board {
+  display: grid;
+  gap: 0.8rem;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.6);
+}
+.cell {
+  /*background-color: rgb(1, 80, 80);*/
+  background-color: #1f3540;
+  color: white;
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+  font-size: 3.4rem;
+  font-weight: 900;
+  cursor: pointer;
+
+}
+
+
+button {
+  border: none;
+  padding: 1.2rem 3.2rem;
+  /*background-color: rgb(1, 80, 80);*/
+  background-color: #1f3540;
+  border-radius: 11px;
+  color: #26FFCB;
+  /*color: white;*/
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.title{
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.title span{
+  color: #26FFCB;
+  padding-left:1.2rem ;
+}
